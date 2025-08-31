@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículum Vitae</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 4px 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .left-column {
+      width: 25%;
+      background-color: #f2f2f2;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .right-column {
+      width: 75%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .profile-photo {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 25px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="orvlogo.jpg" alt="Logo" class="logo">
+    <div class="header-title">Currículum Vitae</div>
+    <div class="nav-links">
+      <a href="#experiencia-profesional">Experiencia Profesional</a>
+      <a href="#experiencia-academica">Experiencia Académica</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="left-column">
+      <img src="perfil.jpg" alt="Foto de perfil" class="profile-photo">
+
+      <h2>Información Personal</h2>
+      <p><strong>Nombre:</strong> Axel Espinosa</p>
+      <p><strong>Teléfono:</strong> +52 55 4766 9244</p>
+      <p><strong>Correo:</strong> axel.espinosa@example.com</p>
+      <p><strong>Dirección:</strong> Ciudad de México</p>
+
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Trabajo en equipo</li>
+        <li>Resolución de problemas</li>
+        <li>Inglés intermedio</li>
+      </ul>
+
+      <h2>Enlaces</h2>
+      <ul>
+        <li><a href="https://github.com/Maren122517" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/axel-espinosa-frontend/" target="_blank">LinkedIn</a></li>
+        <li><a href="contacto.html" target="_blank">Contacto</a></li>
+      </ul>
+
+      <h2>Que prefieres?</h2>
+      <div class="gustos">
+        <ol>
+        <li><label><input type="radio" name="gustos" value="orv" required> Kim dokja </label></li>
+        <li><label><input type="radio" name="gustos" value="tbate"> Arthur leywin </label></li>
+        <li><label><input type="radio" name="gustos" value="tgew"> Lloyd frontera </label></li>
+        <li><label><input type="radio" name="gustos" value="sl"> Sung Jin-woo </label></li>
+        </ol>
+      </div>
+    </div>
+
+    
+
+    <div class="right-column">
+
+      <h2 id="experiencia-profesional">Experiencia Profesional</h2>
+
+        <p><strong>Dog App</strong></p>
+        <ul>
+        <li>Creación de una aplicación en React que permite visualizar y filtrar diferentes razas de perros utilizando The Dog API.</li>
+        <li>Implementación de hooks personalizados, manejo de formularios y listas, renderizado condicional, y navegación con React Router.</li>
+        <li>Modularización del código para mejorar la mantenibilidad y escalabilidad del proyecto.</li>
+        <li>Integración con The Dog API mediante Axios para optimizar el manejo de solicitudes HTTP y la gestión de datos.</li>
+        </ul>
+
+        <p><strong>App de registro veterinario</strong></p>
+        <ul>
+        <li>Desarrollo de una aplicación en React para gestionar los registros de pacientes en una veterinaria.</li>
+        <li>Implementación de formularios, validación de datos y manejo de estados complejos con hooks.</li>
+        <li>Diseño centrado en el usuario con interfaz intuitiva y procesos de validación eficientes.</li>
+        </ul>
+
+        <p><strong>E-commerce</strong></p>
+        <ul>
+        <li>Desarrollo de una tienda en línea con catálogo de productos, carrito de compras y sistema de pagos.</li>
+        <li>Integración de APIs de pago seguras para garantizar transacciones confiables.</li>
+        <li>Optimización de la experiencia de usuario mediante un flujo de compra directo y sin fricciones.</li>
+        <li>Gestión centralizada del estado de la aplicación con Redux.</li>
+        </ul>
+
+        <p><strong>Landing Page de Halo</strong></p>
+        <ul>
+        <li>Diseño y desarrollo de una página promocional para Halo Infinite, orientada a fans del juego.</li>
+        <li>Uso de elementos visuales impactantes alineados con la estética de Halo.</li>
+        <li>Optimización SEO para mejorar la visibilidad en buscadores.</li>
+        <li>Diseño responsivo para asegurar compatibilidad con dispositivos móviles y de escritorio.</li>
+        </ul>
+
+
+      <h2 id="experiencia-academica">Experiencia Académica</h2>
+
+        <p><strong>Universidad Autónoma de la Ciudad de México (UACM)</strong> – 2020 - Actualmente</p>
+        <ul>
+        <li>Carrera: Ingeniería en Software.</li>
+        <li>Formación profesional enfocada en desarrollo de software, estructuras de datos, algoritmos y metodologías ágiles.</li>
+        </ul>
+
+        <p><strong>Escuela Eback Latam</strong> – Curso en curso</p>
+        <ul>
+        <li>Curso intensivo de Full Stack Developer.</li>
+        <li>Enfoque práctico en desarrollo web con tecnologías modernas (frontend y backend).</li>
+        </ul>
+
+        <p><strong>Centro de Estudios Científicos y Tecnológicos No. 8 (IPN – Vocacional 8)</strong> – 2015 - 2018</p>
+        <ul>
+        <li>Título obtenido: Técnico en Computación.</li>
+        </ul>
+
+        <p><strong>Escuela Secundaria Técnica No. 31</strong> – 2012 - 2015</p>
+        <ul>
+        <li>Título obtenido: Técnico en Electrónica.</li>
+        </ul>
+
+    </div>
+  </div>
+
+</body>
+</html>
